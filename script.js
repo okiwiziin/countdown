@@ -1,5 +1,5 @@
 const nowDate = new Date()
-const launchDate = new Date('2022-12-4 16:50')
+const launchDate = new Date('2022-12-28 16:50')
 
 let totalSeconds = (launchDate / 1000) - (nowDate / 1000)
 
@@ -8,7 +8,11 @@ const decrementSecondsInterval = setInterval(() => {
 }, 1000)
 
 function decrementTime() {
-  if (totalSeconds < 2) clearInterval(decrementSecondsInterval)
+  if (totalSeconds < 1) {
+    clearInterval(decrementSecondsInterval)
+    return
+  }
+  
   totalSeconds--
   
   const days = Math.floor(totalSeconds / (3600 * 24))
