@@ -17,7 +17,7 @@ body {
   --text-color: #9C9AB6;
 }
 
-header, footer > img {
+img {
   width: 100%;
 }
 
