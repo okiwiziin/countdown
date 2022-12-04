@@ -59,6 +59,7 @@ header, footer > img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 5.625rem;
 }
 
 .time > p {

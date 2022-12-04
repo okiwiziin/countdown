@@ -1,5 +1,5 @@
 const nowDate = new Date()
-const launchDate = new Date('2022-12-28 19:00')
+const launchDate = new Date('2022-12-4 16:50')
 
 let totalSeconds = (launchDate / 1000) - (nowDate / 1000)
 
@@ -12,9 +12,9 @@ function decrementTime() {
   totalSeconds--
   
   const days = Math.floor(totalSeconds / (3600 * 24))
-	const hours = Math.floor((totalSeconds / 3600) % 24)
-	const minutes = Math.floor((totalSeconds / 60) % 60)
-	const seconds = Math.floor(totalSeconds % 60)
+  const hours = Math.floor((totalSeconds / 3600) % 24)
+  const minutes = Math.floor((totalSeconds / 60) % 60)
+  const seconds = Math.floor(totalSeconds % 60)
 
   document.getElementById('days').innerText = days.toString().padStart(2, '0')
   document.getElementById('hours').innerText = hours.toString().padStart(2, '0')
